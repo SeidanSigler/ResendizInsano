@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0b1c29 ;
+}
+header {
+    background-color: #070707;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 10px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.hero {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+.hero h1 {
+    margin: 0;
+    font-size: 3em;
+}
+.hero p {
+    font-size: 1.2em;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.product {
+    background-color: #1f2937;
+   
+    border-radius: 30px;
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.product img {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+}
+.product h3 {
+    margin: 10px 0;
+    color: #ffffff;
+}
+.product p {
+    color: #61c448;
+}
+.product button {
+    background-color: #ff5730;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1em;
+}
+.product button:hover {
+    background-color: #ffc300;
+}
+footer {
+    background-color: #4b075c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.color-animation {
+    font-size: 2em;
+    font-weight: bold;
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    35% { color: #ff6541 }
+    25% { color: #ffc300 }
+    0% { color: #ffffff }
+    45% { color: #ff6541 }
+
+   
+  
+}
+
+@font-face {
+    font-family:themillion ;
+    src: url(letra.ttf);
+}
+@font-face {
+    font-family:logo;
+    src: url(logo.otf);
+}
+h1{
+    font-family:themillion ;
+}
+
+.cart-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 35px; 
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente */
+    border-radius: 20%; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+#cart-count {
+    background-color: red;
+    border-radius: 50%;
+    padding: 3px 6px; /*  padding */
+    position: absolute;
+    top: -1px; /* posición */
+    right: -1px; /*  posición */
+    font-size: 15px; 
+    color: white; /* numerito*/
+    font-weight: bold; /* Texto en negrita */
+}
+
+
